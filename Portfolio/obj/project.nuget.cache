@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1BTygbAXRpg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nancy\\OneDrive\\Desktop\\Projects\\.NET\\03. Portfolio\\Portfolio\\Portfolio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nancy\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.5\\microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

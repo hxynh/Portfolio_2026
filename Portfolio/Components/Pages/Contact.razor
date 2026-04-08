@@ -1,0 +1,52 @@
+﻿@page "/contact"
+@attribute [StreamRendering]
+
+<PageTitle>Contact</PageTitle>
+
+<h1>Contact Me</h1>
+
+<EditForm Model="@contactModel" OnValidSubmit="HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label>Name</label>
+        <InputText class="form-control" @bind-Value="contactModel.Name" />
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <InputText class="form-control" @bind-Value="contactModel.Email" />
+    </div>
+
+    <div class="mb-3">
+        <label>Message</label>
+        <InputTextArea class="form-control" @bind-Value="contactModel.Message" />
+    </div>
+
+    <button class="btn btn-primary">Send</button>
+</EditForm>
+
+@if (submitted)
+{
+    <p class="text-success mt-3">Message sent successfully!</p>
+}
+
+@code {
+    private ContactModel contactModel = new();
+    private bool submitted = false;
+
+    private void HandleSubmit()
+    {
+        submitted = true;
+
+        // Later: hook up email service
+    }
+
+    public class ContactModel
+    {
+        public string? Name { get; set; }
+        public string? Email { get; set; }
+        public string? Message { get; set; }
+    }
+}
