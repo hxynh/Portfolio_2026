@@ -82,5 +82,7 @@ C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\Portfolio.genruntimeconfig.cache
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\ref\Portfolio.dll
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\Portfolio.sourcelink.json
-C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\dq6x3a8ph8-{0}-gi527agwgz-gi527agwgz.gz
-C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\rbv2ka4glg-{0}-gi527agwgz-gi527agwgz.gz
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\scopedcss\Components\Layout\Footer.razor.rz.scp.css
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\dq6x3a8ph8-{0}-olv69mfvvy-olv69mfvvy.gz
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\rbv2ka4glg-{0}-olv69mfvvy-olv69mfvvy.gz
