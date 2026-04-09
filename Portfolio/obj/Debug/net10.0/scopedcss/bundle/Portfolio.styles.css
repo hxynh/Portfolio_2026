@@ -1,3 +1,43 @@
+/* /Components/Layout/ContactForm.razor.rz.scp.css */
+.contact-form[b-yotj221fct] {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group[b-yotj221fct] {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label[b-yotj221fct] {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.form-group input[b-yotj221fct],
+.form-group textarea[b-yotj221fct] {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button[b-yotj221fct] {
+    padding: 0.8rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover[b-yotj221fct] {
+    background: #333;
+}
 /* /Components/Layout/Footer.razor.rz.scp.css */
 .site-footer[b-ae3nnaofoq] {
     text-align: center;
@@ -332,6 +372,28 @@ main[b-6s3h03cu1w] {
     margin-bottom: 0.4rem;
     font-size: 1rem;
     color: #555;
+}
+/* /Components/Pages/Contact.razor.rz.scp.css */
+.contact-container[b-c3qe0tp4q8] {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.contact-title[b-c3qe0tp4q8] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.contact-title i[b-c3qe0tp4q8] {
+    font-size: 2.6rem;
+    color: #000;
 }
 /* /Components/Pages/Home.razor.rz.scp.css */
 .main-container[b-msgvu9ph55] {
