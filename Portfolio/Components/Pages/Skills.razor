@@ -1,36 +1,54 @@
 ﻿@page "/skills"
+@using Portfolio.Data
+@using Portfolio.Models
+@using Microsoft.EntityFrameworkCore;
+
+@inject SkillsDbContext GetSkillsDb
 @rendermode InteractiveServer
 
 <PageTitle>Skills</PageTitle>
-
-<div class="skills-container">
-    <h1 class="skills-title">Skills and Technologies</h1>
-
-    <div class="skills-grid">
-        <SkillCard Title="Frontend" Items="@frontendSkills" />
-        <SkillCard Title="Backend" Items="@backendSkills" />
-        <SkillCard Title="Database" Items="@databaseSkills" />
+@if (allSkills == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="skills-container">
+        <h1 class="skills-title">Skills and Technologies</h1>
+        
+        <div class="skills-grid">
+            <SkillCard Title="Frontend" Items="@frontendSkills" />
+            <SkillCard Title="Backend" Items="@backendSkills" />
+            <SkillCard Title="Tools" Items="@databaseSkills" />
+        </div>
     </div>
-</div>
+}
+
 
 @code {
-    private List<string> frontendSkills = new()
-    {
-        "Blazor",
-        "HTML / CSS",
-        "Bootstrap"
-    };
+    private List<SkillsList>? allSkills;
+    private List<SkillsList>? frontendSkills;
+    private List<SkillsList>? backendSkills;
+    private List<SkillsList>? databaseSkills;
 
-    private List<string> backendSkills = new()
+    protected override async Task OnInitializedAsync()
     {
-        "C#",
-        "ASP.NET Core",
-        "REST APIs"
-    };
+        allSkills = await GetSkillsDb.SkillsLists.ToListAsync();
 
-    private List<string> databaseSkills = new()
-    {
-        "SQL Server",
-        "Entity Framework"
-    };
+        frontendSkills = allSkills
+            .Where(s => s.Category == "Frontend")
+            .OrderBy(s => s.Name)
+            .ToList();
+
+        backendSkills = allSkills
+            .Where(s => s.Category == "Backend")
+            .OrderBy(s => s.Name)
+            .ToList();
+
+        databaseSkills = allSkills
+            .Where(s => s.Category == "Tools")
+            .OrderBy(s => s.Name)
+            .ToList();
+    }
+
 }

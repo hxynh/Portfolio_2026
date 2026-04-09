@@ -1,3 +1,4 @@
+
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -7,8 +8,6 @@
     border-bottom: 1px solid #dcdcdc;
 }
 
-
-/* Left section */
 .left-section {
     display: flex;
     align-items: center;
@@ -32,13 +31,11 @@
     color: #666;
 }
 
-/* Right section: icon + label */
 .nav-links {
     display: flex;
     gap: 3rem;
 }
 
-/* Remove ALL default link styling */
 .nav-item,
 .nav-item:visited,
 .nav-item:active,
@@ -48,27 +45,30 @@
     color: black !important;
 }
 
-/* Vertical layout */
-.nav-item {
+nav.nav-links .nav-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;      
+    justify-content: center;  
+    text-align: center;
+    gap: 0.25rem;
 }
 
-/* Icons */
 .nav-icon {
     font-size: 1.4rem;
-    margin-bottom: 0.25rem;
+    display: block;
+    margin: 0 auto;
+    line-height: 1;
+    width: 1.4rem; 
     color: black;
 }
 
-/* Labels */
 .nav-label {
     font-size: 0.9rem;
     color: black;
+    text-align: center;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .topbar {
         flex-direction: column;
