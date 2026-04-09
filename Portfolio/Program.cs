@@ -9,7 +9,8 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddDbContext<SkillsDbContext>(options =>
-    options.UseSqlite("Data Source=skills.db"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 
 var app = builder.Build();
