@@ -24,6 +24,26 @@
     font-size: 1rem;
 }
 
+.success[b-yotj221fct] {
+    margin-top: 1rem;
+    color: green;
+    font-weight: 600;
+}
+
+.loader[b-yotj221fct] {
+    margin-top: 1rem;
+    width: 28px;
+    height: 28px;
+    border: 4px solid #ccc;
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: spin-b-yotj221fct 0.8s linear infinite;
+}
+
+@keyframes spin-b-yotj221fct {
+    to { transform: rotate(360deg); }
+}
+
 button[b-yotj221fct] {
     padding: 0.8rem;
     background: #000;
