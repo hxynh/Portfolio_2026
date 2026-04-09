@@ -1,36 +1,91 @@
-﻿<div class="contact-form">
-    <div class="form-group">
-        <label>Name</label>
-        <input type="text" @bind="Name" />
-    </div>
+﻿@using System
+@using System.Net
+@using System.Net.Mail
+@using Portfolio.Models
 
-    <div class="form-group">
-        <label>Surname</label>
-        <input type="text" @bind="Surname" />
-    </div>
+<EditForm Model="@form" OnValidSubmit="HandleSubmit" formname="contactForm">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
 
-    <div class="form-group">
-        <label>Email</label>
-        <input type="email" @bind="Email" />
-    </div>
+    <div class="contact-form">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" @bind="form.Name" />
+            <ValidationMessage For="@(() => form.Name)" />
+        </div>
 
-    <div class="form-group">
-        <label>Message</label>
-        <textarea rows="4" @bind="Message"></textarea>
-    </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" @bind="form.Email" />
+            <ValidationMessage For="@(() => form.Email)" />
+        </div>
 
-    <button @onclick="Submit">Submit</button>
-</div>
+        <div class="form-group">
+            <label>Message</label>
+            <textarea type="text" @bind="form.Message" ></textarea>
+            <ValidationMessage For="@(() => form.Message)" />
+        </div>
+
+        <button type="submit" disabled="@IsSending">
+            @(IsSending ? "Sending..." : "Submit")
+        </button>
+
+        @if (IsSending)
+        {
+            <div class="loader"></div>
+        }
+
+        @if (SuccessMessage != null)
+        {
+            <p class="success">@SuccessMessage</p>
+        }
+    </div>
+</EditForm>
 
 @code {
-    private string Name { get; set; } = "";
-    private string Surname { get; set; } = "";
-    private string Email { get; set; } = "";
-    private string Message { get; set; } = "";
+    private ContactValidationModel form = new();
+    private string? SuccessMessage;
+    private bool IsSending = false;
 
-    private void Submit()
+
+    private async Task HandleSubmit()
     {
-        // TODO: handle form submission (email, API, etc.)
-        Console.WriteLine("Form submitted");
+        try
+        {
+            IsSending = true;
+            await SendEmailAsync();
+            SuccessMessage = "Your message has been sent successfully!";
+            form = new ContactValidationModel(); // reset form
+        }
+        catch (Exception ex)
+        {
+            SuccessMessage = "Failed to send message.";
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            IsSending = false;
+        }
+    }
+
+    private async Task SendEmailAsync()
+    {
+        var smtp = new SmtpClient("smtp.gmail.com")
+        {
+            Port = 587,
+            Credentials = new NetworkCredential("nancyhou958@gmail.com", "ekkl ghgb akog pdno"),
+            EnableSsl = true
+        };
+
+        var mail = new MailMessage
+        {
+            From = new MailAddress("nancyhou958@gmail.com"),
+            Subject = $"Portfolio Contact: {form.Name}".Trim(),
+            Body = $"Email: {form.Email}\n\nMessage:\n{form.Message}"
+        };
+
+        mail.To.Add("nancyhou958@gmail.com");
+
+        await smtp.SendMailAsync(mail);
     }
 }
