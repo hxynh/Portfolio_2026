@@ -1,10 +1,16 @@
 using Portfolio.Components;
+using Portfolio.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddDbContext<SkillsDbContext>(options =>
+    options.UseSqlite("Data Source=skills.db"));
+
 
 var app = builder.Build();
 

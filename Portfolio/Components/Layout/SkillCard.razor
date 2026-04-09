@@ -1,15 +1,17 @@
-﻿<div class="skill-card">
+﻿@using Portfolio.Models
+<div class="skill-card">
     <h3>@Title</h3>
 
     <ul>
-        @foreach (var item in Items)
+        @foreach (var skill in Items)
         {
-            <li>@item</li>
+            <li>@skill.Name</li>
         }
     </ul>
 </div>
 
 @code {
     [Parameter] public string Title { get; set; } = string.Empty;
-    [Parameter] public List<string> Items { get; set; } = new();
+    [Parameter] public List<SkillsList> Items { get; set; } = new();
 }
+
