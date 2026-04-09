@@ -3,41 +3,34 @@
 
 <PageTitle>Skills</PageTitle>
 
-<h1>Skills</h1>
+<div class="skills-container">
+    <h1 class="skills-title">Skills and Technologies</h1>
 
-<div class="row">
-    <!-- Frontend -->
-    <div class="col-md-4 mb-4">
-        <div class="card p-3">
-            <h4>Frontend</h4>
-            <ul>
-                <li>Blazor</li>
-                <li>HTML / CSS</li>
-                <li>Bootstrap</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Backend -->
-    <div class="col-md-4 mb-4">
-        <div class="card p-3">
-            <h4>Backend</h4>
-            <ul>
-                <li>C#</li>
-                <li>ASP.NET Core</li>
-                <li>REST APIs</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Database -->
-    <div class="col-md-4 mb-4">
-        <div class="card p-3">
-            <h4>Database</h4>
-            <ul>
-                <li>SQL Server</li>
-                <li>Entity Framework</li>
-            </ul>
-        </div>
+    <div class="skills-grid">
+        <SkillCard Title="Frontend" Items="@frontendSkills" />
+        <SkillCard Title="Backend" Items="@backendSkills" />
+        <SkillCard Title="Database" Items="@databaseSkills" />
     </div>
 </div>
+
+@code {
+    private List<string> frontendSkills = new()
+    {
+        "Blazor",
+        "HTML / CSS",
+        "Bootstrap"
+    };
+
+    private List<string> backendSkills = new()
+    {
+        "C#",
+        "ASP.NET Core",
+        "REST APIs"
+    };
+
+    private List<string> databaseSkills = new()
+    {
+        "SQL Server",
+        "Entity Framework"
+    };
+}

@@ -84,5 +84,7 @@ C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\Portfolio.sourcelink.json
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\scopedcss\Components\Layout\Footer.razor.rz.scp.css
-C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\dq6x3a8ph8-{0}-olv69mfvvy-olv69mfvvy.gz
-C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\rbv2ka4glg-{0}-olv69mfvvy-olv69mfvvy.gz
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\scopedcss\Components\Layout\SkillCard.razor.rz.scp.css
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\scopedcss\Components\Pages\Skills.razor.rz.scp.css
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\dq6x3a8ph8-{0}-ite76icgws-ite76icgws.gz
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\rbv2ka4glg-{0}-ite76icgws-ite76icgws.gz

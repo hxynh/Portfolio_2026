@@ -1,0 +1,18 @@
+.skills-container {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}

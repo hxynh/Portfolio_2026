@@ -1,0 +1,38 @@
+.skill-card[b-pmj2h47eus] {
+    width: 250px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 280px; /* ensures all cards are same width */
+    min-height: 220px; /* ensures all cards are same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover[b-pmj2h47eus] {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.skill-card h3[b-pmj2h47eus] {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.skill-card ul[b-pmj2h47eus] {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-card li[b-pmj2h47eus] {
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    color: #555;
+}

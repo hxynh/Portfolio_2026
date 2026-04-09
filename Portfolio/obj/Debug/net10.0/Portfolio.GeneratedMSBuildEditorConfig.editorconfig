@@ -26,6 +26,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/nancy/OneDrive/Desktop/Projects/.NET/03. Portfolio/Portfolio/Components/Layout/ContactForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQ29udGFjdEZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nancy/OneDrive/Desktop/Projects/.NET/03. Portfolio/Portfolio/Components/Pages/Contact.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,10 +40,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/nancy/OneDrive/Desktop/Projects/.NET/03. Portfolio/Portfolio/Components/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/nancy/OneDrive/Desktop/Projects/.NET/03. Portfolio/Portfolio/Components/Pages/Skills.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTa2lsbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nancy/OneDrive/Desktop/Projects/.NET/03. Portfolio/Portfolio/Components/Routes.razor]
@@ -66,6 +66,14 @@ build_metadata.AdditionalFiles.CssScope = b-fw0lmtliz2
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUmVjb25uZWN0TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-g2z3n77jqs
 
+[C:/Users/nancy/OneDrive/Desktop/Projects/.NET/03. Portfolio/Portfolio/Components/Layout/SkillCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcU2tpbGxDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-pmj2h47eus
+
 [C:/Users/nancy/OneDrive/Desktop/Projects/.NET/03. Portfolio/Portfolio/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-msgvu9ph55
+
+[C:/Users/nancy/OneDrive/Desktop/Projects/.NET/03. Portfolio/Portfolio/Components/Pages/Skills.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTa2lsbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-02k1e6ktf8
