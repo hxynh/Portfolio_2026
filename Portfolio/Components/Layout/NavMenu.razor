@@ -1,30 +1,27 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Portfolio</a>
+﻿<header class="topbar">
+    <div class="left-section">
+        <img src="images/profile.jpg" class="profile-pic" />
+
+        <div class="identity">
+            <div class="name">Nancy Hou</div>
+            <div class="title">Software Engineer</div>
+        </div>
     </div>
-</div>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+    <nav class="nav-links">
+        <NavLink class="nav-item" href="" Match="NavLinkMatch.All">
+            <i class="bi bi-house-fill nav-icon"></i>
+            <div class="label">Home</div>
+        </NavLink>
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
+        <NavLink class="nav-item" href="skills">
+            <i class="bi bi-wrench-adjustable-circle-fill nav-icon"></i>
+            <div class="label">Skills</div>
+        </NavLink>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="skills">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Skills
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="contact">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Contact
-            </NavLink>
-        </div>
+        <NavLink class="nav-item" href="contact">
+            <i class="bi bi-chat-dots-fill nav-icon"></i>
+            <div class="label">Contact</div>
+        </NavLink>
     </nav>
-</div>
-
+</header>

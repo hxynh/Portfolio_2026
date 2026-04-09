@@ -71,8 +71,6 @@ C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\oe4vlwajxd-{0}-abdmv1u4y3-abdmv1u4y3.gz
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\nm7d4p8mtt-{0}-b9228eflpl-b9228eflpl.gz
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\9fdkymrxq4-{0}-2tj1sjhksk-2tj1sjhksk.gz
-C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\dq6x3a8ph8-{0}-cj4xco0831-cj4xco0831.gz
-C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\rbv2ka4glg-{0}-cj4xco0831-cj4xco0831.gz
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\staticwebassets.development.json
@@ -83,3 +81,6 @@ C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\Portfolio.pdb
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\Portfolio.genruntimeconfig.cache
 C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\ref\Portfolio.dll
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\Portfolio.sourcelink.json
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\dq6x3a8ph8-{0}-gi527agwgz-gi527agwgz.gz
+C:\Users\nancy\OneDrive\Desktop\Projects\.NET\03. Portfolio\Portfolio\obj\Debug\net10.0\compressed\rbv2ka4glg-{0}-gi527agwgz-gi527agwgz.gz
